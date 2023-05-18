@@ -7,10 +7,10 @@ TARGET_TEST := zkProverTest
 BUILD_DIR := ./build
 SRC_DIRS := ./src ./test ./tools
 
-LIBOMP := $(shell find /usr/lib/llvm-* -name "libomp.so" | sed 's/libomp.so//')
-ifndef LIBOMP
-$(error LIBOMP is not set, you need to install libomp-dev)
-endif
+#LIBOMP := $(shell find /usr/lib/llvm-* -name "libomp.so" | sed 's/libomp.so//')
+#ifndef LIBOMP
+#$(error LIBOMP is not set, you need to install libomp-dev)
+#endif
 
 CXX := g++
 AS := nasm
